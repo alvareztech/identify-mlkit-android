@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".MainActivity">
+
+  <ImageView
+    android:id="@+id/photoImageView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:scaleType="fitStart" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+
+    <Button
+      android:id="@+id/onePhotoButton"
+      style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/photo_1" />
+
+    <Button
+      android:id="@+id/twoPhotoButton"
+      style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/photo_2" />
+
+    <Button
+      android:id="@+id/identifyButton"
+      style="@style/Base.Widget.AppCompat.Button.Colored"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/identify" />
+
+    <TextView
+      android:id="@+id/labelsTextView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:textSize="24sp"
+      tools:text="Here the labels" />
+
+  </LinearLayout>
+
+</LinearLayout>
